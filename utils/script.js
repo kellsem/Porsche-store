@@ -2,9 +2,9 @@ const colorsPallete = document.querySelectorAll('.color-pallete li span');
 const wheelsCollection = document.querySelectorAll('.wheels-collection li span');
 const carSelected = document.querySelector('.image-car img');
 
-// Pega o nome do carro da página atual (do título, URL, ou atributo data)
+
 function getCarName() {
-    // Opção 1: Do título da página
+  
     const title = document.title.toLowerCase();
     if (title.includes('911')) return '911';
     if (title.includes('718')) return '718';
@@ -13,11 +13,11 @@ function getCarName() {
     if (title.includes('panamera')) return 'panamera';
     if (title.includes('cayenne')) return 'cayenne';
     
-    // Opção 2: Do data-attribute no body (RECOMENDADO)
+
     const bodyCar = document.body.getAttribute('data-car');
     if (bodyCar) return bodyCar;
     
-    // Opção 3: Padrão
+
     return '911';
 }
 
@@ -55,7 +55,7 @@ function handleShowCar() {
     const currentImage = carSelected;
     const newImage = new Image();
     
-    // MODIFICAÇÃO AQUI: Inclui o nome do carro no caminho
+    // Inclui o nome do carro no caminho
     const imagePath = `../public/assets/${currentCar}-${colorsSelected}-${wheelsSelected}.png`;
     
     console.log('Tentando carregar:', imagePath);

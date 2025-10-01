@@ -1,19 +1,19 @@
 * {
-Margin: 0;
-padding:0;
-box-sizing: border-box;
+  Margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
 htmlm, body {
- scroll-behavior: smooth;
- font-size: 16px;
- font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 #container{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-background-color:#eeeff2;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color:#eeeff2;
 }
 .header{
   background-color: #eff0f1;
@@ -28,13 +28,93 @@ background-color:#eeeff2;
   left:0;
   height: 120px;
   z-index: 1; 
- 
+  
 }
 .header img{
-    width:200px;
+  width:200px;
 }
 
-  /* MAIN */
+/* MAIN */
+/* Lupa de Pesquisa */
+.search-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+     
+}
+
+.search-box {
+    display: flex;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 2px 15px black;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-btn {
+    padding: 12px 20px;
+    background: #878a90;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background: rgb(105, 104, 104);
+}
+
+.results {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    width: 350px;
+    right: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.result-item {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.2s ease;
+}
+
+.result-item:hover {
+    background: #f8f8f8;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+
+/* MAIN Cards */
 .content {
   width: 100%;
   margin-top: 120px;
@@ -149,97 +229,6 @@ background-color:#eeeff2;
   transform: translateY(-2px);
 }
 
-
-/* Lupa de Pesquisa */
-.search-container {
-    display: flex;
-    width: 100%;
-    margin-bottom: 15px;
-     
-}
-
-.search-box {
-    display: flex;
-    border: 2px solid #ddd;
-    border-radius: 25px;
-    overflow: hidden;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-
-.search-box:focus-within {
-    box-shadow: 0 2px 15px black;
-}
-
-.search-input {
-    flex: 1;
-    padding: 10px 25px;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-    background: transparent;
-}
-
-.search-input::placeholder {
-    color: #999;
-}
-
-.search-btn {
-    padding: 12px 20px;
-    background: #878a90;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.search-btn:hover {
-    background: rgb(105, 104, 104);
-}
-
-.results {
-    position: absolute;
-    top: 100%;
-    left: 20px;
-    width: 350px;
-    right: 20px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-top: 5px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-}
-
-.result-item {
-    padding: 12px 20px;
-    border-bottom: 1px solid #eee;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    transition: background 0.2s ease;
-}
-
-.result-item:hover {
-    background: #f8f8f8;
-}
-
-.result-item:last-child {
-    border-bottom: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Responsividade */
 @media (max-width: 1024px) {
   .car-card {
     flex: 0 0 calc(50% - 12px);

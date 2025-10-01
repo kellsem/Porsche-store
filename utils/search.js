@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Lista de carros da sua loja
+    // Lista de carros
     const carros = [
         { id: 1, nome: "911 Carrera S", url: "http://127.0.0.1:5500/pages/911.html" },
         { id: 2, nome: "Cayman 718", url: "http://127.0.0.1:5500/pages/718.html" },
