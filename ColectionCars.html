@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./StyleColection.css">
+  <title>Collection Cars</title>
+</head>
+<body>
+  
+ <div id="container">
+     <header class="header">
+       <a href="http://127.0.0.1:5500/ColectionCars.html">
+         <img src="./public/assets/porsche-logo.png" alt="porsche-logo">
+       </a>
+     </header>
+ </div>
+<main class="content">
+  <div class="cars-gallery">
+  <!-- Lupa de Pesquisa -->
+ <div class="search-container">
+   <div class="search-box">
+     <input type="text" id="car-search" placeholder="Pesquisar carro..." class="search-input">
+     <button class="search-btn">
+       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+         <circle cx="11" cy="11" r="8"></circle>
+         <path d="m21 21-4.3-4.3"></path>
+       </svg>
+     </button>
+   </div>
+   <div class="results" id="results"></div>
+ </div>
+
+
+
+     <!-- Card 1 -->
+    <div class="car-card">
+       <div class="img-car">
+        <img width="390" src="./public/assets/911.png" alt="">
+      </div>
+      <div class="card-content">
+        <h3 class="car-model">911 Carrera S (2026)</h3>
+        <p class="car-price">A partir de R$ 1.100.000,00.</p>
+        
+        <div class="specs-grid">
+          <div class="spec-item">
+            <span class="spec-value">Coupé, Cabriolet</span>
+            <span class="spec-label">Carroceria</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">2+2</span>
+            <span class="spec-label">Bancos</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">Automático, Manual</span>
+            <span class="spec-label">Transmissão</span>
+          </div>
+        </div>
+
+          <div class="actions">
+            <a class="config-btn" href="http://127.0.0.1:5500/pages/911.html"><button>Configurar</button></a> 
+          </div>  
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="car-card">
+      <div class="img-car">
+        <img width="390" src="./public/assets/boxter718.png" alt="">
+      </div>
+      <div class="card-content">
+        <h3 class="car-model">Cayman 718</h3>
+        <p class="car-price">A partir de R$ 535.000,00.</p>
+        
+        <div class="specs-grid">
+          <div class="spec-item">
+            <span class="spec-value">Coupé, Cabriolet</span>
+            <span class="spec-label">Carroceria</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">2</span>
+            <span class="spec-label">Bancos</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">Automática</span>
+            <span class="spec-label">Transmissão</span>
+          </div>
+        </div>
+        
+        <div class="actions">
+            <a class="config-btn" href="http://127.0.0.1:5500/pages/718.html"><button>Configurar</button></a> 
+        </div> 
+      </div>
+    </div>
+  
+    <!-- Card 3 -->
+    <div class="car-card">
+      <div class="img-car">
+        <img width="390" src="./public/assets/macan.png" alt="">
+      </div>
+      <div class="card-content">
+        <h3 class="car-model">Macan SUV (2026)</h3>
+        <p class="car-price">A partir de R$ 560.000,00.</p>
+        
+        <div class="specs-grid">
+          <div class="spec-item">
+            <span class="spec-value">SUV</span>
+            <span class="spec-label">Carroceria</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">5</span>
+            <span class="spec-label">Bancos</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">Automático</span>
+            <span class="spec-label">Transmissão</span>
+          </div>
+        </div>
+        
+        <div class="actions">
+            <a class="config-btn" href="http://127.0.0.1:5500/pages/Macan.html"><button>Configurar</button></a> 
+        </div> 
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="car-card">
+      <div class="img-car">
+        <img width="390" src="./public/assets/taycan.png" alt="">
+      </div>
+      <div class="card-content">
+        <h3 class="car-model">Taycan (Elétrico)</h3>
+        <p class="car-price">A partir de R$ 820.000,00.</p>
+        
+        <div class="specs-grid">
+          <div class="spec-item">
+            <span class="spec-value">Sedan Esportivo</span>
+            <span class="spec-label">Carroceria</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">4+1</span>
+            <span class="spec-label">Bancos</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">Automático</span>
+            <span class="spec-label">Transmissão</span>
+          </div>
+        </div>
+        
+        <div class="actions">
+            <a class="config-btn" href="http://127.0.0.1:5500/pages/taycan.html"><button>Configurar</button></a> 
+        </div> 
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="car-card">
+      <div class="img-car">
+        <img width="390" src="./public/assets/panamera.png" alt="">
+      </div>
+      <div class="card-content">
+        <h3 class="car-model">Panamera (Hibrído)</h3>
+        <p class="car-price">A partir de R$ 850.000,00.</p>
+        
+        <div class="specs-grid">
+          <div class="spec-item">
+            <span class="spec-value">Sedan Esportivo</span>
+            <span class="spec-label">Carroceria</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">4+1</span>
+            <span class="spec-label">Bancos</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">Automático</span>
+            <span class="spec-label">Transmissão</span>
+          </div>
+        </div>
+        
+        <div class="actions">
+            <a class="config-btn" href="http://127.0.0.1:5500/pages/panamera.html"><button>Configurar</button></a> 
+        </div> 
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="car-card">
+       <div class="img-car">
+        <img width="390" src="./public/assets/Cayenne.png" alt="">
+      </div>
+      <div class="card-content">
+        <h3 class="car-model">Cayenne S (2026)</h3>
+        <p class="car-price">A partir de R$ 795.000,00.</p>
+        
+        <div class="specs-grid">
+          <div class="spec-item">
+            <span class="spec-value">SUV, Coupé</span>
+            <span class="spec-label">Carroceria</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">5, 4+1</span>
+            <span class="spec-label">Bancos</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-value">Automática</span>
+            <span class="spec-label">Transmissão</span>
+          </div>
+        </div>
+
+        <div class="actions">
+            <a class="config-btn" href="http://127.0.0.1:5500/pages/cayenne.html"><button>Configurar</button></a> 
+        </div> 
+      </div>
+    </div>
+
+
+  </div>
+</main>
+</body>
+<script src="./utils/search.js"></script>
+</html>
+
+<!-- https://configurator.porsche.com/pt-BR/model-start -->
