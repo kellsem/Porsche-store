@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Lista de carros
-    const carros = [
-        { id: 1, nome: "911 Carrera S", url: "http://127.0.0.1:5500/pages/911.html" },
-        { id: 2, nome: "Cayman 718", url: "http://127.0.0.1:5500/pages/718.html" },
-        { id: 3, nome: "Macan SUV", url: "http://127.0.0.1:5500/pages/Macan.html" },
-        { id: 4, nome: "Taycan", url: "http://127.0.0.1:5500/pages/taycan.html" },
-        { id: 5, nome: "Panamera", url: "http://127.0.0.1:5500/pages/panamera.html" },
-        { id: 6, nome: "Cayenne S", url: "http://127.0.0.1:5500/pages/cayenne.html" }
-    ];
+const carros = [
+    { id: 1, nome: "911 Carrera S", url: "pages/911.html" },
+    { id: 2, nome: "Cayman 718", url: "pages/718.html" },
+    { id: 3, nome: "Macan SUV", url: "pages/Macan.html" },
+    { id: 4, nome: "Taycan", url: "pages/taycan.html" },
+    { id: 5, nome: "Panamera", url: "pages/panamera.html" },
+    { id: 6, nome: "Cayenne S", url: "pages/cayenne.html" }
+];
 
     const carSearch = document.getElementById('car-search');
     const results = document.getElementById('results');
